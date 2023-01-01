@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="duplicate and merge lead with common class" parallel="tests">
+  <test thread-count="5" name="parallelTest1" parallel="tests">
+    <classes>
+      <class name="week5.assignments.DuplicateLead"/>
+    </classes>
+  </test> <!-- Test --> 
+   <test thread-count="5" name="parallelTest2" parallel="tests">
+    <classes>
+      <class name="week5.assignments.EditLead"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
