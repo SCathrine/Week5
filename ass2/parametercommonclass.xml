@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parameters Suite" parallel="tests">
+
+<!--TEST1-->
+  <test thread-count="5" name="Test CreateLead">
+  <!--common class parameters-->
+  <parameter name="url" value="http://leaftaps.com/opentaps/"></parameter>
+  <parameter name="username" value="DemoCSR"></parameter>
+  <parameter name="password" value="crmsfa"></parameter>
+   <parameter name="login" value="decorativeSubmit"></parameter>
+   <parameter name="link" value="CRM/SFA"></parameter>
+   <parameter name="link2" value="Leads"></parameter>
+ 
+ <!--createlead class parameters-->
+   <parameter name="link3" value="Create Lead"></parameter>
+  <parameter name="cname" value="TestLeaf"></parameter>
+  <parameter name="fname" value="angelique rayar"></parameter>
+   <parameter name="lname" value="M"></parameter>
+   <parameter name="ph" value="123"></parameter>
+   <parameter name="sbutton" value="submitButton"></parameter>
+   
+   <!--CreateLead class-->
+    <classes>
+      <class name="week5.day2.ass2.CreateLead"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <!--TEST2-->
+  
+  <test thread-count="5" name="Test DuplicateLead">
+  <!--common class parameters-->
+  <parameter name="url" value="http://leaftaps.com/opentaps/"></parameter>
+  <parameter name="username" value="DemoCSR"></parameter>
+  <parameter name="password" value="crmsfa"></parameter>
+   <parameter name="login" value="decorativeSubmit"></parameter>
+   <parameter name="link" value="CRM/SFA"></parameter>
+   <parameter name="link2" value="Leads"></parameter>
+ 
+ <!--Duplicate class parameters-->
+   <parameter name="flink" value="Find Leads"></parameter>
+  <parameter name="phno" value="123"></parameter>
+  <parameter name="dlink" value="Duplicate Lead"></parameter>
+   <parameter name="subbutton" value="submitButton"></parameter>
+
+   
+   <!--DuplicateLead class-->
+    <classes>
+      <class name="week5.day2.ass2.DuplicateLead"/>
+    </classes>
+  </test> <!-- Test -->
+ 
+  
+  
+  <!--TEST3-->
+  
+  <test thread-count="5" name="Test EditLead">
+  <!--common class parameters-->
+  <parameter name="url" value="http://leaftaps.com/opentaps/"></parameter>
+  <parameter name="username" value="DemoCSR"></parameter>
+  <parameter name="password" value="crmsfa"></parameter>
+   <parameter name="login" value="decorativeSubmit"></parameter>
+   <parameter name="link" value="CRM/SFA"></parameter>
+   <parameter name="link2" value="Leads"></parameter>
+ 
+ <!--EditLead class parameters-->
+   <parameter name="pno" value="123"></parameter>
+   <parameter name="compname" value="Spi Global"></parameter>
+ 
+  <!--EditLead class-->
+    <classes>
+      <class name="week5.day2.ass2.EditLead"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->
